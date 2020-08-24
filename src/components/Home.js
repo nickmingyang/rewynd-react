@@ -3,7 +3,9 @@ import Header from "./Header";
 
 function Home(props) {
     return (
-        <div></div>
+        <div>
+            <h1>This is HOME</h1>
+        </div>
     )
 }
 

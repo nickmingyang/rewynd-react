@@ -8,7 +8,7 @@ import {
   NavItem,
   Jumbotron,
 } from "reactstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -30,16 +30,18 @@ class Header extends Component {
         <Jumbotron fluid>
           <div className="container">
             <div className="row">
-              <div className="mr-1">
-                <img
-                  src="../assets/logo.svg"
-                  height="50"
-                  width="50"
-                  alt="Rewynd Logo"
-                />
-              </div>
-
-              <h1>REWYND</h1>
+              <Link to="/home">
+                <div className="container">
+                  <a className="ml-3">
+                    <span className="logo">
+                      <img src="../assets/logo.svg" class="logo mb-3" />
+                    </span>{" "}
+                    <span className="title" id="clickLogo">
+                      REWYND
+                    </span>
+                  </a>
+                </div>
+              </Link>
             </div>
           </div>
         </Jumbotron>

@@ -45,7 +45,7 @@ class Footer extends Component {
                   id="footerEmail"
                   name="footerEmail"
                   placeholder="Email"
-                />
+                />{" "}
                 <button type="submit" class="btn btn-danger">
                   sign up
                 </button>
