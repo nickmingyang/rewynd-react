@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import About from "./About";
 import MyAccount from "./MyAccount";
 import Home from "./Home";
+import Footer from "./Footer";
 
 class Main extends Component {
   render() {
@@ -23,6 +24,7 @@ class Main extends Component {
           <Route exact path="/myaccount" render={() => <MyAccount />} />
           <Redirect to="/home" />
         </Switch>
+        <Footer />
       </div>
     );
   }
