@@ -24,6 +24,9 @@ h5 {
   background-color: rgba(250, 250, 250, 0.97);
   color: white;
 }
+body {
+  overflow-x: hidden;
+}
 
 .site-footer {
   background-color: rgba(250, 250, 250, 0.97);
