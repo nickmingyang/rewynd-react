@@ -56,8 +56,8 @@ class Header extends Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="nav-link" to="/myaccount">
-                    My Account
+                  <NavLink className="nav-link" to="/cart">
+                    My Cart
                   </NavLink>
                 </NavItem>
                 <NavItem>

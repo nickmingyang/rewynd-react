@@ -3,7 +3,7 @@ import Header from "./Header";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import Contact from "./Contact";
 import About from "./About";
-import MyAccount from "./MyAccount";
+import MyCart from "./MyCart";
 import Home from "./Home";
 import Footer from "./Footer";
 
@@ -21,7 +21,7 @@ class Main extends Component {
           <Route path="/home" component={HomePage} />
           <Route exact path="/contactus" render={() => <Contact />} />
           <Route exact path="/aboutus" render={() => <About />} />
-          <Route exact path="/myaccount" render={() => <MyAccount />} />
+          <Route exact path="/cart" render={() => <MyCart />} />
           <Redirect to="/home" />
         </Switch>
         <Footer />

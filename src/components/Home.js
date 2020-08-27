@@ -4,20 +4,17 @@ Row,
 Col,
 Card,
 CardBody,
-Carousel,
-CarouselItem,
-CarouselControl,
-CarouselIndicators,
-CarouselCaption,
-CardSubtitle,
 CardText,
-CardTitle
+CardTitle,
+CardImg,
+Container
   } from "reactstrap";
 import ResultsCarousel from "./Carousel";
 
 function Home(props) {
     return (
         <React.Fragment>
+            <Container fluid={true}>
             <Row>
                 <Col className="col-12 ml-4 mt-4">
                 <h1>What is Rewynd?</h1>
@@ -69,8 +66,10 @@ function Home(props) {
             <Col xs="12" className=" ml-4 mt-4">
                 <h1>Results</h1>
             </Col>
-            <Col xs="auto">
+            <Col xs="12" className="d-flex justify-content-center">
+            <Card className="m-4">
             <ResultsCarousel/>
+            </Card>
             </Col>
             </Row>
             <Row>
@@ -79,9 +78,9 @@ function Home(props) {
                 </Col>
                 <Col lg="4">
                     <Card className="m-4">
-                        <img
-                            class="card-img-top img-fluid"
-                            src="/img/histogram.png"
+                        <CardImg
+                            className="card-img-top img-fluid"
+                            src="/assets/histogram.png"
                             alt="histogram"
                         />
                     <CardBody className="border-secondary">
@@ -99,30 +98,30 @@ function Home(props) {
                 </Col>
                 <Col lg="4">
                     <Card className="m-4">
-                        <img
-                            class="card-img-top img-fluid"
-                            src="/img/histogram.png"
-                            alt="histogram"
+                        <CardImg
+                            className="card-img-top img-fluid"
+                            src="/assets/noise.png"
+                            alt="noise"
                         />
-                    <CardBody className="border-secondary">
-                    <CardTitle className="p-2">
-                    <h5>Denoising</h5>
-                    </CardTitle>
-                    <CardText className="p-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat.
-                    </CardText>
-                    </CardBody>
+                        <CardBody className="border-secondary">
+                        <CardTitle className="p-2">
+                        <h5>Denoising</h5>
+                        </CardTitle>
+                        <CardText className="p-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.
+                        </CardText>
+                        </CardBody>
                     </Card>
                 </Col>
                 <Col lg="4">
                     <Card className="m-4">
-                        <img
-                            class="card-img-top img-fluid"
-                            src="/img/histogram.png"
-                            alt="histogram"
+                        <CardImg
+                            classname="card-img-top img-fluid"
+                            src="/assets/upscaling.png"
+                            alt="upscaling"
                         />
                     <CardBody className="border-secondary">
                     <CardTitle className="p-2">
@@ -138,7 +137,7 @@ function Home(props) {
                     </Card>
                 </Col>
             </Row>
-            
+            </Container>
         </React.Fragment>
     )
 }
